@@ -3,19 +3,20 @@
  * @author (Horus Hernandez) 
  * @version (3/1/2017)
  */
- 
+
+int BonusToken; 
   /**
-     * 
+     * Constructor for Class BonusToken
      */
     public BonusToken(int s)
     {
-     
+     BonusToken = s;
     }
     
-    public tokenValue(int x){
+    public int getTokenValue(){
     
     }
-    
+    return BonusToken;
     
     }
     
