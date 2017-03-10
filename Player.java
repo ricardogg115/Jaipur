@@ -49,6 +49,12 @@ public class Player
             }
         }
     }
+    
+    //public static BonusToken sellCard(Card card, int amount)
+    //{
+    //}
+    
+    
     public void winRound(Player player1, Player player2)
     {
     }
