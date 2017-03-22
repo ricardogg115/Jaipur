@@ -6,27 +6,27 @@ public class Deck
     public Deck()
     {
         ArrayList<Card> diamond = new ArrayList<Card>();
-        for (int a = 0; a <= 10; a++)
+        for (int a = 0; a <= 6; a++)
         {
             diamond.add((new Card("Diamond")));
         }
         ArrayList<Card> gold = new ArrayList<Card>();
-        for(int a = 0; a <= 10; a++)
+        for(int a = 0; a <= 6; a++)
         {
             gold.add((new Card("Gold")));
         }
         ArrayList<Card>Silver = new ArrayList<Card>();
-        for(int a = 0; a<= 10; a++)
+        for(int a = 0; a<= 6; a++)
         {
             Silver.add((new Card("Silver")));
         }
         ArrayList<Card>Cloth = new ArrayList<Card>();
-        for(int a = 0; a <= 10; a++)
+        for(int a = 0; a <= 8; a++)
         {
             Cloth.add((new Card("Cloth")));
         }
         ArrayList<Card>Spice = new ArrayList<Card>();
-        for(int a = 0; a <= 10; a++)
+        for(int a = 0; a <= 8; a++)
         {
             Spice.add((new Card("Spice")));
         }
@@ -35,7 +35,12 @@ public class Deck
         {
             Leather.add((new Card("Leather")));
         }
-        for(int Good = 0; Good <= 60; Good++)
+        ArrayList<Card>Camel = new ArrayList<Card>();
+        for(int a= 0;a<=11;a++)
+        {
+            Camel.add((new Card("Camel")));
+        }
+        for(int Good = 0; Good <= 55; Good++)
         {
             goodsCard.add(diamond.get(Good));
             goodsCard.add(gold.get(Good));
@@ -43,6 +48,7 @@ public class Deck
             goodsCard.add(Cloth.get(Good));
             goodsCard.add(Spice.get(Good));
             goodsCard.add(Leather.get(Good));
+            goodsCard.add(Camel.get(Good));
         }
     }
 
