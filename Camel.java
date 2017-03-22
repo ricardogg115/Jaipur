@@ -1,7 +1,10 @@
-public class Camel
+import java.util.Scanner;
+public class Camel extends Card
 {
-  public Camel()
-  {
-  }
-}  
+    
+    public Camel(String str)
+    {
+        super(str);
+    }
    
+    }
