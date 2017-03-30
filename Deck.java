@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 
+/**
+* Constructor for class Deck
+*/
 public class Deck
 {
     public ArrayList<Card>goodsCard;
@@ -51,7 +54,7 @@ public class Deck
             goodsCard.add(Camel.get(Good));
         }
     }
-
+    
     public boolean isEmpty()
     {
         return goodsCard.isEmpty();
