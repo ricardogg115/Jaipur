@@ -1,17 +1,33 @@
 import java.util.ArrayList;
-
+/**
+ * Write a description of class Stack here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class Stack
 {
-    public ArrayList<Token> tokenStack;   
+    private ArrayList<Token> tokenStack;   
+    
+    /**
+     * Constructor for class Stack
+     * @param str String name to describe tokens in the Stack
+     */
     public Stack(String str)
     {
-        for (int Gold = 0; Gold <= 10; Gold++)
+        tokenStack = new ArrayList<Token>();
+        for (int a = 0; a < 10; a++)
         {
-            tokenStack.add(Gold,new Token(str,10-Gold));
-        }        
+            tokenStack.add(a,new Token(str,10-a));
+        }
     }
+        
+    /**
+     * Returns true or false if the Stack is empty or not.
+     * 
+     */
     public boolean isEmpty()
     {
         return tokenStack.isEmpty();
-    }
+    }        
 }

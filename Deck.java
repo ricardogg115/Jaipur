@@ -1,67 +1,93 @@
 import java.util.ArrayList;
-
+import java.util.Collections;
 /**
-* Constructor for class Deck
-*/
+ * Write a description of class Deck here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class Deck
 {
-    public ArrayList<Card>goodsCard;
+    private ArrayList<Card> goodsCard;
+    
+    /**
+     * Constructor for class Deck
+     */
     public Deck()
-    {
+    {        
+        goodsCard = new ArrayList<Card>();
         ArrayList<Card> diamond = new ArrayList<Card>();
-        for (int a = 0; a <= 6; a++)
-        {
-            diamond.add((new Card("Diamond")));
-        }
         ArrayList<Card> gold = new ArrayList<Card>();
-        for(int a = 0; a <= 6; a++)
+        ArrayList<Card> silver = new ArrayList<Card>();
+        ArrayList<Card> spice = new ArrayList<Card>();
+        ArrayList<Card> silk = new ArrayList<Card>();
+        ArrayList<Card> leather = new ArrayList<Card>();
+        ArrayList<Camel> camel = new ArrayList<Camel>();
+        for (int a = 0; a <= 10; a++)
         {
-            gold.add((new Card("Gold")));
+            diamond.add(a,(new Card("Diamond")));
+            goodsCard.add(diamond.get(a));
         }
-        ArrayList<Card>Silver = new ArrayList<Card>();
-        for(int a = 0; a<= 6; a++)
+        for (int b = 0; b <= 10; b++)
         {
-            Silver.add((new Card("Silver")));
+            gold.add(b,(new Card("Gold")));
+            goodsCard.add(gold.get(b));
         }
-        ArrayList<Card>Cloth = new ArrayList<Card>();
-        for(int a = 0; a <= 8; a++)
+        for (int c = 0; c <= 10; c++)
         {
-            Cloth.add((new Card("Cloth")));
+            silver.add(c,(new Card("Silver")));
+            goodsCard.add(silver.get(c));
         }
-        ArrayList<Card>Spice = new ArrayList<Card>();
-        for(int a = 0; a <= 8; a++)
+        for (int d = 0; d <= 10; d++)
         {
-            Spice.add((new Card("Spice")));
+            spice.add(d,(new Card("Spice")));
+            goodsCard.add(spice.get(d));
         }
-        ArrayList<Card>Leather = new ArrayList<Card>();
-        for(int a = 0; a<= 10; a++)
+        for (int e = 0; e <= 10; e++)
         {
-            Leather.add((new Card("Leather")));
+            silk.add(e,(new Card("Silk")));
+            goodsCard.add(silk.get(e));
         }
-        ArrayList<Card>Camel = new ArrayList<Card>();
-        for(int a= 0;a<=11;a++)
+        for (int f = 0; f <= 10; f++)
         {
-            Camel.add((new Card("Camel")));
-        }
-        for(int Good = 0; Good <= 55; Good++)
+            leather.add(f,(new Card("Leather")));
+            goodsCard.add(leather.get(f));
+        }       
+        for (int g = 0; g <= 10; g++)
         {
-            goodsCard.add(diamond.get(Good));
-            goodsCard.add(gold.get(Good));
-            goodsCard.add(Silver.get(Good));
-            goodsCard.add(Cloth.get(Good));
-            goodsCard.add(Spice.get(Good));
-            goodsCard.add(Leather.get(Good));
-            goodsCard.add(Camel.get(Good));
+            camel.add(g,(new Camel("Camel")));
+            goodsCard.add(camel.get(g));
         }
+        Collections.shuffle(goodsCard);
     }
     
+    /**
+     * Returns true if the deck's ArrayList is empty. False 
+     * otherwise.
+     * @return true if empty or false
+     */
     public boolean isEmpty()
     {
         return goodsCard.isEmpty();
     }
     
-    public  Card drawCard()
+    /**
+     * Returns a Card object that has been drawn/removed from the "top"
+     * of the deck.
+     * @return Card
+     */
+    public Card drawCard()
     {
-        return goodsCard.get(0);
+        return goodsCard.remove(0);
     }
+    
+    /**
+     * Returns the entire deck.
+     * @return goodsCard
+     */
+    public ArrayList<Card> getDeck()
+    {
+        return goodsCard;
+    }
+              
 }
