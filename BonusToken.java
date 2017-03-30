@@ -1,23 +1,29 @@
-/**
- * The BonusToken Class is used to trade cards with tokens
- * @author (Horus Hernandez) 
- * @version (3/1/2017)
- */
 
-int BonusToken; 
-  /**
-     * Constructor for Class BonusToken
+/**
+ * Write a description of class BonusToken here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class BonusToken extends Token
+{
+    // instance variables - replace the example below with your own
+    private int bonusToken;
+
+    /**
+     * Constructor for objects of class BonusToken
      */
-    public BonusToken(int s)
+    public BonusToken(int a)
     {
-     BonusToken = s;
+        super("",a);
     }
     
-    public int getTokenValue(){
-    
+    /** 
+     * Returns token value.
+     * @return bonusToken
+     */
+    public int getTokenValue()
+    {
+        return bonusToken;
     }
-    return BonusToken;
-    
-    }
-    
-    }
+}
