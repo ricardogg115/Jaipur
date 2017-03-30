@@ -4,32 +4,15 @@
  * @version (3/1/2017)
  */
  
-  /**
-     *
-     */
-    public Display()
-    {
-    
-    }
-    
-     /**
-     * 
-     */
-    public int sampleMethod(int y)
-    {
-      
-    }
-    
-    public void displayHand(){
-    }
-    
-    public void displyStack(){
-    }
-    
-    public void displayNumSeals(){
-    }
-    
-    public void displayPlayer(){
-    }
-    
-    }
+  /**     * Displays the player's stats: hand, stack and number of seals.
+		* @param player player object     
+		* @param a indicates player number     
+		*/    public static void displayPlayer(Player player, int a)    
+		{       
+			System.out.println();       
+			displayHand(player,a);        
+			displayStack(player,a);       
+			displayNumSeals(player,a);           
+		}
+
+  
