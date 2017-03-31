@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Herd here.
- * 
+ * The Herd class stores Camel cards in order to have a way of finding which
+ * player will get the token or other extra attribute of the game that involve the amount of camel cards.
  * @author (Diana Olmos) 
  * @version (version 1)
  */
