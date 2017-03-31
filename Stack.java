@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Stack here.
+ * 
  * 
  * @author (Milly) 
  * @version (a version number or a date)
