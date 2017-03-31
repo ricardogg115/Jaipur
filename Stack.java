@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 /**
- * 
+ * The Stack class makes different stacks for different types of tokens.
+ *When there is a stack that is completely empty it's put in a new location called isEmpty.
  * 
  * @author (Milly) 
  * @version (a version number or a date)
