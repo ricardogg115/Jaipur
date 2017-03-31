@@ -3,7 +3,7 @@ import java.util.Collections;
 /**
  * Write a description of class Deck here.
  * 
- * @author (your name) 
+ * @author (Milly) 
  * @version (a version number or a date)
  */
 public class Deck
