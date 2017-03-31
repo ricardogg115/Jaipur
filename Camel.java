@@ -2,7 +2,7 @@
 /**
  * Write a description of class Camel here.
  * 
- * @author (your name) 
+ * @author (Diana Olmos) 
  * @version (a version number or a date)
  */
 public class Camel extends Card
