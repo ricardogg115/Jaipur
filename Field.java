@@ -2,7 +2,7 @@ import java.util.ArrayList;
 /**
  * Write a description of class Field here.
  * 
- * @author (your name) 
+ * @author (Milly) 
  * @version (a version number or a date)
  */
 public class Field
