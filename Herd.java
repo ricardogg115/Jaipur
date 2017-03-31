@@ -2,8 +2,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Herd here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Diana Olmos) 
+ * @version (version 1)
  */
 public class Herd
 {
@@ -15,9 +15,9 @@ public class Herd
      */
     public void addToHerd(Field field)
     {
-        for (int a = 0; a < camelHerd.size(); a++)
+        for (int i = 0; i < camelHerd.size(); i++)
         {
-            camelHerd.add(field.camelHerd().get(a));
+            camelHerd.add(field.camelHerd().get(i));
         }
     }
 }
