@@ -1,27 +1,29 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Discard here.
+ * The Discard class recieves/takes cards and makes a discard stack in which it places
+ * the discarded cards, yet does not completely eliminate/destroy them. 
+ * It also refills the deck once it (the deck) becomes empty using a static void refill method.  
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Diana Olmos) 
+ * @version (version 1)
  */
 public class Discard
 {
     public static ArrayList<Card> discardStack;
-    
-    public static void addToPile(Card card)
+    // @param 
+    public static void addToPile(Card idk)
     {
-        discardStack.add(card);
+        discardStack.add(idk);
     }
     
     
-    public static void refill(Deck deck)
+    public static void refill(Deck trash)
     {
-        if (deck.isEmpty())
+        if (trash.isEmpty())
         {
-            for (int a = 0; a < deck.getDeck().size(); a++)
+            for (int i = 0; i < trash.getDeck().size(); i++)
             {
-                deck.getDeck().add(discardStack.get(a));
+                trash.getDeck().add(discardStack.get(i));
             }
         }
     }
