@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 /**
- * Write a description of class Deck here.
+ *This class gets all the total of all the diffrent good cards and puts the total amount of the cards.
  * 
  * @author (Milly) 
  * @version (a version number or a date)
