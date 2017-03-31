@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Field here.This class should and does call the cards from the card class and present it.
+ * This class should and does call the cards from the card class and present it.
  * 
  * @author (Milly) 
  * @version (a version number or a date)
