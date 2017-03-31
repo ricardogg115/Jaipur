@@ -10,13 +10,13 @@ import java.util.ArrayList;
 public class Discard
 {
     public static ArrayList<Card> discardStack;
-    // @param 
+    //@param card the idk object for which the discarded cards are in.
     public static void addToPile(Card idk)
     {
         discardStack.add(idk);
     }
     
-    
+    // @param Deck the trash object for which the discarded cards are in.
     public static void refill(Deck trash)
     {
         if (trash.isEmpty())
