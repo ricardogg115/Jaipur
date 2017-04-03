@@ -1,10 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 /**
- * Write a description of class Main here.
+ * The Jaipur Class is the Main Class is in charge of playing the actual game. The Main class has interactions with every other class.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Horus Hernandez) 
+ * @version(1.0)
  */
 public class Jaipur
 {
