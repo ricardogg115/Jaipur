@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class BonusToken here.
+ * The BonusToken Class is used to trade cards with tokens
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Horus Hernandez) 
+ * @version (1.0)
  */
 public class BonusToken extends Token
 {
