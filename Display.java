@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 /**
- * Write a description of class Display here.
+ * The display class displays the contents of the game.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Horus Hernandez) 
+ * @version (1.0)
  */
 public class Display
 {
